@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<title>страница</title>
+</head>
+<body>
+	<script>
+		var m = [100000000,100000000,12,11,0,-13,16,9];
+
+		function perevernut(m) {
+			var last = m[0];
+			m[0] = m[m.length-1]
+			m[m.length-1] = last
+			return m;
+		}
+
+		function minVal(m) {
+			var i = 1;
+			var min = m[0];
+
+			while (i < m.length) {
+				if (m[i] < min) {
+					min = m[i]
+				}
+				i++;
+			}
+			return min;
+		}
+		
+		function maxVal(m) {
+			var i = 1;
+			var max = m[0];
+
+			while (i < m.length) {
+				if (m[i] > max) {
+					max = m[i]
+				}
+				i++;
+			}
+			return max;
+		}
+
+		console.log("Привет, мир!")
+		console.log(minVal(m));
+		console.log(maxVal(m));
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>курица</title>
+</head>
+<body>
+	<script>
+
+
+		function Chiken(name) {
+			this.name = name;
+
+			this.say = function () {
+				return "Ко-ко-ко! Меня зовут " + this.name + "!";
+			}
+		}
+
+
+
+		
+		 var hen = new Chiken("Johny", false);
+		 var hen1 = new Chiken("Ряба", true);
+
+		console.log(hen.say())
+		console.log(hen1.say())
+
+		console.log(hen.egg.category)
+		console.log(hen1.egg.category)
+	</script>
+</body>
+</html>
